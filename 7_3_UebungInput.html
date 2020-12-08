@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uebung Input</title>
+</head>
+<body>
+
+<form action="anmelden.php">
+    Name:
+    <input type="text" name="Name" maxlength="15" placeholder="Dein Name"> <br>
+    Alter:
+    <input type="number" name="Alter" min="12" max="120"> <br>
+    eMail:
+    <input type="email" name="eMail" autocomplete="off" minlength="8"> <br>
+    <input type="submit" value="Absenden">
+
+  <fieldset>
+      Bevorzugte Reiseoptionen<br>
+      <input type="checkbox" name="reiseoptionen" value="Auto">Auto<br>
+      <input type="checkbox" name="reiseoptionen" value="Flug">Flug<br>
+      <input type="checkbox" name="reiseoptionen" value="Zug">Zug<br>
+      <input type="checkbox" name="reiseoptionen" value="Schiff">Schiff<br>
+  </fieldset>
+
+</form>
+
+</body>
+</html>
