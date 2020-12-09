@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        .fixed{
+            position: fixed;
+            left: 50px;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            background-color: brown;
+        }
+        .container{
+            position: absolute;
+        }
+        .obenLinks{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 22px;
+            color: white;
+
+        }
+        .mitte{
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            width: 100%;
+            text-align: center;
+            background-color: aqua;
+            color: white;
+        }
+        img{
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+<h2>Position</h2>
+<div class="sticky">sticky text</div>
+<div class="fixed">fixed text</div>
+<p>Hier noch Text eingefügt</p>
+<div class="container">
+    <img src="guitar-1858123_1920.jpg">
+    <div class="obenLinks">oben links</div>
+    <div class="mitte">MITTE</div>
+</div>
+</body>
+</html>

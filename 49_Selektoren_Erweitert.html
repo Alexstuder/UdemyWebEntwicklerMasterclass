@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektoren Gruppieren</title>
+    <style>
+        /*div und P sylen*/
+        h1,p{
+            color:blue;
+            font-weight: bold;
+        }
+        /* alle p in div stylen*/
+        div p {
+          color: red;
+        }
+        /* alle p nach div stylen*/
+        div + p {
+            color: green;
+        }
+        /* alle p die Child von div sind stylen (slebe wie 'div p{}')*/
+        div > p {
+            color: gold;
+        }
+         /*mit ID-Selektoren koennen span gestlyt werden */
+        #FettUndRot{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gruppierte Ueberschrift h1</h1>
+    <div>
+        Text im div ist von keinem style betroffen
+        <h1>Uebrschrift im div</h1>
+        <p>Paragraphen im div und auch child von div (das selbe)</p>
+    </div>
+    <p>Paragraphen direkt nach DIV</p>
+    <span>span kann einfach als Puffer oder für bestimmte Styles genutzt werden</span>
+    <p>Paragraphen nach span somit nicht mehr direkt nach div</p>
+    <h2>Nicht gruppierte Ueberschrift h2</h2>
+    <p>Gruppierter paragraphen</p>
+<h1>Ueberschrift mit <span id="FettUndRot">SPAN</span> innerhalb des Textes</h1>
+</body>
+</html>
