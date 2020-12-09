@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular Stylen</title>
+    <style>
+        div{
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 1px 10px 0px 10px;
+            margin: 30px;
+            background-color: #cccccc;
+        }
+        input[type=text],input[type=password],select{
+            width: 100%;
+            padding: 10px 10px 10px 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            margin: 20px 0px 20px 0px ;
+            width: 100%;
+            height: 30px;
+            background-color: #ca5b5b;
+            color: white;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #41002C;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <form action="/register.php">
+       <label for="benutzername">Benutzername</label><br>
+       <input type="text" id="benutzername" name="benutzername" placeholder="Dein Benutzername"><br>
+       <label for="password">Passwort</label><br>
+       <input type="password" id="password" name="passwort" placeholder="Dein Passwort"><br>
+       <label for="alter">Wie alt bist du ?</label><br>
+        <select id="alter">
+
+            <option value="kleiner 20">Unter 20</option>
+            <option value="unter 30">Unter 30</option>
+            <option value="ueber 30">Ueber 30</option>
+        </select>
+
+           <br>
+        <input  class="submit" type="submit" value="Registrieren">
+    </form>
+</div>
+</body>
+</html>
